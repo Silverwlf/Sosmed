@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Akses Semua Media Sosial</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Menyusun semua elemen di tengah */
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 2rem; /* Padding atas, bawah, kiri, dan kanan */
+            width: 100%; /* Membuat header penuh */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 4rem; /* Ukuran judul header */
+            margin: 0; /* Menghapus margin */
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 4rem; /* Ukuran judul bagian media sosial */
+            margin-bottom: 1.5rem; /* Jarak bawah */
+            width: 100%; /* Membuat h2 memenuhi lebar */
+        }
+
+        .social-container {
+            display: flex; /* Menggunakan flex untuk menata ikon */
+            justify-content: center; /* Memusatkan ikon */
+            flex-wrap: wrap; /* Memungkinkan ikon untuk berpindah baris jika tidak muat */
+            gap: 1rem; /* Jarak antar ikon */
+            padding: 1rem;
+        }
+
+        .social-button {
+            background-color: white; /* Warna latar belakang tombol */
+            border: none; /* Menghilangkan border */
+            border-radius: 8px; /* Sudut membulat */
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
+            transition: transform 0.3s; /* Transisi saat hover */
+            padding: 0; /* Menghilangkan padding */
+        }
+
+        .social-button img {
+            width: 50px; /* Ukuran logo */
+            height: 50px; /* Tinggi logo */
+            margin: 10px; /* Margin untuk memberi jarak */
+        }
+
+        .social-button:hover {
+            transform: scale(1.1); /* Membesarkan tombol saat dihover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 2rem;
+            font-size: 1.2rem; /* Ukuran teks footer */
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3rem; /* Ukuran judul lebih kecil di perangkat kecil */
+            }
+            h2 {
+                font-size: 2rem; /* Ukuran judul media sosial lebih kecil di perangkat kecil */
+            }
+            footer {
+                font-size: 1rem; /* Ukuran footer lebih kecil di perangkat kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akses Semua Media Sosial</h1>
+    </header>
+
+    <main>
+        <h2>Pilih Media Sosial Favoritmu</h2>
+        <div class="social-container">
+            <button class="social-button" onclick="window.open('https://web.whatsapp.com', '_blank')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            </button>
+            <button class="social-button" onclick="window.open('https://www.facebook.com', '_blank')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+            </button>
+            <button class="social-button" onclick="window.open('https://www.instagram.com', '_blank')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+            </button>
+            <button class="social-button" onclick="window.open('https://www.twitter.com', '_blank')">
+                <img src="https://seeklogo.com/images/T/twitter-icon-logo-7BBFAFDF88-seeklogo.com.png" alt="Twitter Logo">
+            </button>
+            <button class="social-button" onclick="window.open('https://www.linkedin.com', '_blank')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn Logo">
+            </button>
+            <button class="social-button" onclick="window.open('https://www.youtube.com', '_blank')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+            </button>
+            <button class="social-button" onclick="window.open('https://www.tiktok.com', '_blank')">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-vector-logo.png" alt="TikTok Logo">
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Akses Semua Media Sosial. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
